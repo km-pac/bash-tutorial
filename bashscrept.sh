@@ -8,6 +8,7 @@ mkdir compressed_files
 
 for x in $( cat list.txt );
 do
+  echo "Turning $x into a text file"
   echo $x >> "$x.txt"
   mv "$x.txt" compressed_files
 done
