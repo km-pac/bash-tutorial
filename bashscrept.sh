@@ -21,7 +21,7 @@ rm -f *_iso.txt
 
 for file in "$compressed_files"/*;
 do
-  echo $file
+  echo "$file"
   #echo $x >> $x"_iso.txt"
   #tar -xzvf $(*_iso.tar.gz) $x"_iso.txt"
 done
