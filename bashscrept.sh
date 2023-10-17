@@ -14,5 +14,5 @@ do
   mv $x"_iso.tar.gz" compressed_files
 done
 
-rm -f *_iso.txt
+#rm -f *_iso.txt
 
