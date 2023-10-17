@@ -19,9 +19,9 @@ done
 
 rm -f *_iso.txt
 
-for x in /*_iso.tar.gz;
+for file in "$compressed_files"/*;
 do
-  echo ${x:1}
+  echo $file
   #echo $x >> $x"_iso.txt"
   #tar -xzvf $(*_iso.tar.gz) $x"_iso.txt"
 done
