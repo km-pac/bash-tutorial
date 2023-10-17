@@ -21,8 +21,7 @@ rm -f *_iso.txt
 
 for file in compressed_files/*_iso.tar.gz;
 do
-  echo "${file:17}"
-  #echo $x >> $x"_iso.txt"
-  #tar -xzvf $(*_iso.tar.gz) $x"_iso.txt"
+  echo "Extracting ${file:17}"
+  tar -xzvf ${file:17} $x"_iso.txt" -C extracted_files
 done
 
