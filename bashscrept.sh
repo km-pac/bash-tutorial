@@ -5,10 +5,12 @@ echo "Generating random text files"
 sleep 1
 
 mkdir compressed_files
+mkdir extracted_files
 
 for x in $( cat list.txt );
 do
-  echo "Turning $x into a text file"
+  echo "Created and compressed $x"
   echo $x >> "$x.txt"
-  mv "$x.txt" compressed_files
+  tar -czvf $x.txt.tar.gz compressed_files
 done
+
