@@ -20,7 +20,7 @@ done
 
 rm -f *_iso.txt
 
-for x in compressed_files/*_iso.tar.gz;
+for x in /*_iso.tar.gz;
 do
   echo $x
   #echo $x >> $x"_iso.txt"
