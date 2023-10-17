@@ -20,10 +20,9 @@ done
 rm -f *_iso.txt
 cd compressed_files
 
-for file in /*;
+for file in compressed_files/*_iso.tar.gz;
 do
-  echo $file
-  #echo "Extracting ${file:17}"
-  #tar -xzvf ${file:17} $x"_iso.txt" -C extracted_files
+  echo "Extracting ${file:17}"
+  tar -xzvf ${file:17} $x"_iso.txt" -C ../extracted_files
 done
 
