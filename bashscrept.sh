@@ -19,7 +19,7 @@ done
 
 rm -f *_iso.txt
 
-for file in $compressed_files;
+for file in compressed_files;
 do
   echo "$file"
   #echo $x >> $x"_iso.txt"
