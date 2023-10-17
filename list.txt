@@ -1,4 +1,3 @@
-# List of files to be created and compressed
 0407164148
 0711323853
 3817758512
