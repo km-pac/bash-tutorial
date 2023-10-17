@@ -8,8 +8,8 @@ mkdir extracted_files
 
 for x in $( cat generated_numbers.txt );
 do
-  echo "Created and compressed $x"
-  echo $x >> $x"_iso.txt"
+  #echo "Created and compressed $x"
+  #echo $x >> $x"_iso.txt"
   tar -czvf $x"_iso.tar.gz" $x"_iso.txt"
   mv $x"_iso.tar.gz" compressed_files
 done
