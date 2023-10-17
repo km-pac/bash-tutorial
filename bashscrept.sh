@@ -14,5 +14,12 @@ do
   mv $x"_iso.tar.gz" compressed_files
 done
 
-#rm -f *_iso.txt
+rm -f *_iso.txt
+
+for x in /compressed_files;
+do
+  echo $x
+  #echo $x >> $x"_iso.txt"
+  #tar -xzvf $(*_iso.tar.gz) $x"_iso.txt"
+done
 
