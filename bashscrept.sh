@@ -23,7 +23,8 @@ echo $PWD
 
 for file in compressed_files/*_iso.tar.gz;
 do
-  echo "Extracting ${file:17}"
-  tar -xzvf ${file:17} $x"_iso.txt" -C ../extracted_files
+  current_file = ${file:17}
+  echo "Extracting $current_file"
+  tar -xzvf $current_file $x"_iso.txt" -C ../extracted_files
 done
 
