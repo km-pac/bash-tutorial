@@ -19,6 +19,7 @@ done
 
 rm -f *_iso.txt
 cd compressed_files
+echo $PWD
 
 for file in compressed_files/*_iso.tar.gz;
 do
